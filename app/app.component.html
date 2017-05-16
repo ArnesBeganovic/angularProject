@@ -1,0 +1,42 @@
+<div class="app">
+    <div class="row">
+        <div class="col-md-12">
+            <header></header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 menublock">
+            <mainMenu></mainMenu></div>
+        <div class="col-md-10 mainblock">
+            <div class="row">
+                <div class="col-md-12">
+                    <dashboard></dashboard>
+                </div>
+            </div>
+            <!--<router-outlet></router-outlet>-->
+            <div [ngSwitch]="componentToDisplay">
+                <div *ngSwitchCase="1">
+                    <mainPage></mainPage>
+                </div>
+                <div *ngSwitchCase="2">
+                    <mainOrders></mainOrders>
+                </div>
+                <div *ngSwitchCase="3">
+                    <mainProducts></mainProducts>
+                </div>
+                <div *ngSwitchCase="4">
+                    <mainEditProducts></mainEditProducts>
+                </div>
+                <div *ngSwitchCase="5">
+                    <mainDatatables></mainDatatables>
+                </div>
+                <div *ngSwitchCase="6">
+                    <mainCharts></mainCharts>
+                </div>
+                <div *ngSwitchCase="7">
+                    <mainForms></mainForms>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

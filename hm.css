@@ -1,0 +1,248 @@
+
+/*************************************************************
+ ************ DOCUMENT DEFAULTS*******************************
+ *************************************************************/
+@font-face{font-family:FontAwesome;src:url(fonts/fontawesome-webfont.eot?v=4.7.0);src:url(fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}
+.fa,.arnes_icon,.arnes_icon_btn,.arnes_input_icon{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0,0)}
+.fa-angle-down:before{content:"\f107"}
+.fa-angle-right:before{content:"\f105"}
+.fa-search:before{content:"\f002"}
+.fa-envelope-o:before{content:"\f003"}
+.fa-comments-o:before{content:"\f0e6"}
+.fa-check-square-o:before{content:"\f046"}
+.fa-user:before{content:"\f007"}
+.fa-quote-right:before{content:"\f10e"}
+.fa-line-chart:before{content:"\f201"}
+.fa-home:before{content:"\f015"}
+.fa-cube:before{content:"\f1b2"}
+.fa-pencil-square-o:before{content:"\f044"}
+.fa-table:before{content:"\f0ce"}
+.fa-bar-chart-o:before,.fa-bar-chart:before{content:"\f080"}
+.fa-list-alt:before{content:"\f022"}
+.fa-angle-double-right:before{content:"\f101"}
+.fa-sign-in:before{content:"\f090"}
+.fa-plus:before{content:"\f067"}
+.fa-external-link:before{content:"\f08e"}
+.fa-trash-o:before{content:"\f014"}
+
+.PoravnajDesno{
+		text-align:right !important;
+}
+.app{padding-top:5px;padding-left:20px;padding-right:20px;background: #f1f1f1}
+.nomargin {margin:0;}
+.mainblock{
+	width:100%;
+	border-right:2px solid #e5e5e5;
+	border-bottom:2px solid #e5e5e5;
+	border-left:2px solid #e5e5e5;
+	  }
+
+.menublock{
+	width:100%;
+	border-left:2px solid #e5e5e5;
+	border-bottom:2px solid #e5e5e5;
+	border-right:2px solid #e5e5e5;
+	  }
+/*************************************************************
+ ************ MAIN HEADER DEFAULTS****************************
+ *************************************************************/
+.toolbar{color:#fff;font-size:18px;background:#3498db}
+.logo {height:40px;margin-top:5px}
+.arnes_icon{color:#fff;}
+.arnes_icon_button{color:#fff;background: transparent;border: 0px;}
+.arnes_icon_button .arnes_icon{font-size: 24px;}
+.arnes_icon_count {
+	background-color: #eb6e1a;border-radius: 50%;font-size: 12px;height: 22px;
+	min-width: 22px;line-height: 17px;box-sizing: border-box;-moz-box-sizing: boder-box;
+	-webkit-box-sizing: boder-box;padding: 0 4px;text-align: center;line-height: 22px;position: absolute;
+	left: 40;top: 0;
+}
+.header_person{	background: transparent !important;}
+.header_person{	padding: 0;	line-height: 46px;}
+.header_person .photo{width: 38px;height: 38px;float: left;margin-top: 5px;-moz-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;}
+.header_person span{color: #fff;float: left;padding-left: 7px;}
+.header_person .arnes_icon{line-height: inherit;}
+
+/*************************************************************
+ ************ MAIN MENU DEFAULTS****************************
+ *************************************************************/
+.menu{background: #f1f1f1;height:100%;width:100%;
+	  padding-top:5px;margin-bottom:10px;
+	  font-family: 'PT Sans',Tahoma;font-size: 15px;color: #666;-webkit-font-smoothing: antialiased;}
+.menu_header_open{padding-left:10px;padding-top:10px;padding-bottom:10px;height:50px;}
+.menu_header_close{padding-left:10px;padding-top:10px;padding-bottom:10px;height:50px;border-bottom:1px solid #e5e5e5;}
+.menu .arnes_icon{color:#666;font-size:19px;display:inline-block;width:20px;}
+.menuItem{padding-top: 4px;padding-bottom: 10px;}
+.menuItemSelected{padding-top: 4px;padding-bottom: 10px;background:#27ae60;color:#fff}
+
+/*************************************************************
+ ************ DASHBOARD DEFAULTS******************************
+ *************************************************************/
+.dashboard{
+	padding: 12px 12px;	line-height: 29px;background:#f1f1f1;height:57px;border-bottom: 2px solid #e5e5e5;
+	font-family: 'PT Sans',Tahoma;font-size: 15px;color: #666;-webkit-font-smoothing: antialiased;
+}
+.dashboard .header{float: left;font-size: 18px;}
+.dashboard .description{float: left;font-size: 13px;font-style: italic;padding-left: 10px;}
+
+
+/*************************************************************
+ ************ MAIN TOOLBAR DEFAULTS***************************
+ *************************************************************/
+
+/* Display items in flow */
+.toolbarBox{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;justify-content: space-around;}
+
+/* Make items as boxes */
+.toolbarBox .item{
+	border-radius: 3px;position: relative;min-width: 150px;height: 105px;padding-top: 10px;	margin: 11px 5.5px 0px 5.5px;
+	color: #fff;-ms-box-flex: 1;-webkit-box-flex: 1;
+	-moz-box-flex: 1;               /* Firefox 19- */
+	-ms-flex: 1 auto;                    /* TWEENER - IE 10 */
+	-webkit-flex: 1 auto;                /* NEW - Chrome */
+	flex: 1 auto;
+}
+
+/* Available box colors based on user input */
+.toolbarBox .item.orders{background: #a693eb;}
+.toolbarBox .item.users{background-color: #63b4ea;}
+.toolbarBox .item.profit{background-color: #49cd81;}
+.toolbarBox .item.feedbacks{background-color: #f19b60;}
+
+/* Make huge icon */
+.toolbarBox .item .icon{padding-left:10px;height: 63px;	padding-top:7px;display: block;width: 30%;font-size: 63px;
+	color:rgba(255, 255, 255, 0.17);}
+
+/* Put Details in upper right corner */
+.toolbarBox .item .details{position: absolute;top:10px;right: 10px;width: 150px;}
+
+/* Value should be slightly greater then text */
+.toolbarBox .item .value{width: 100%;font-size: 22px;text-align: right;}
+.toolbarBox .item .text{width: 100%;font-size: 16px;text-align: right;}
+
+/* Footer and hover */
+.toolbarBox .item .footer{width: 100%;font-size:12px;	text-align: center;padding-right:10px;background:rgba(0,0,0,0.05);margin-top:2px;height:28px;padding-top:5px;}
+.toolbarBox .item .footer:hover {margin-top:0px;height:30px;background:rgba(0,0,0,0.3);cursor: pointer;}
+
+
+/*************************************************************
+ ************ CHART TOOLBAR DEFAULTS**************************
+ *************************************************************/
+.chartArea{margin-top: 8px;margin-bottom:8px;width:100%;height:250px;border:2px solid #e5e5e5;border-radius: 3px;
+	background:#ffffff;}
+.chartArea .title{padding-left:10px;font-family: 'PT Sans',Tahoma;font-size: 16px;color: #666;
+    -webkit-font-smoothing: antialiased;cursor: default;white-space: normal;}
+.chartArea .title .legendItem{font-family: 'PT Sans',Tahoma;font-size: 15px;color: #666;
+    -webkit-font-smoothing: antialiased;cursor: default;white-space: normal;}
+
+
+.button{width:100px;display: inline-block;border-radius: 6px;height: 100%;cursor: pointer;color: #fff;font-size: 15px;height:30px;margin:2px;
+    border: 1px solid #3498db;background: #3498db;border-bottom: 1px solid #268fd5;outline: 0;box-sizing: border-box;font-family: 'PT Sans',Tahoma;
+	-webkit-appearance: none;text-align: left;padding-top:2px;padding-left:5px;}
+
+.space {
+	flex-grow: 1;
+  min-width: 25%;
+}
+
+.inputSpan{
+	flex-grow: 1;
+	min-width:160px;
+	height:35px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	color: #666;
+    background: #fff;
+    font-family: 'PT Sans',Tahoma;
+    -webkit-appearance: none;
+	padding-top:9px;
+	padding-left:5px;
+	text-align:left;
+	padding-left:5px;
+	font-style: italic;
+	font-size: small;
+	margin-top:1px;
+}
+
+.strelicaDole{
+	color:#fff;height:35px;width:30px;background:#3498db;
+	z-index: 1;position: relative; right: 10px;top:1px;
+	border-radius: 0 6px 6px 0;text-align:center; 
+	padding-top:10px;display: inline-block;
+}
+
+.flexRow{
+	padding-left: 20px; padding-right:20px;padding-top:5px;display: flex;flex-wrap: wrap;
+}
+
+
+
+
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:7px;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+	
+}
+
+table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+	height:30px;
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+
+table td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}

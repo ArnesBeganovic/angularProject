@@ -1,0 +1,24 @@
+<div style="overflow: scroll;">
+<table width="99%">
+    <thead>
+        <tr>
+            <th *ngFor="let header of datatable.header" width="{{header.width}}">{{header.text}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let oneRow of datatable.rows">
+            <td>{{oneRow[datatable.header[0].text]}}</td>
+            <td>{{oneRow[datatable.header[1].text]}}</td>
+            <td>{{oneRow[datatable.header[2].text]}}</td>
+            <td>{{oneRow[datatable.header[3].text]}}</td>
+            <td>{{oneRow[datatable.header[4].text]}}</td>
+            <td>{{oneRow[datatable.header[5].text]}}</td>
+            <td>{{oneRow[datatable.header[6].text]}}</td>
+            <td>{{oneRow[datatable.header[7].text]}}</td>
+            <td>{{oneRow[datatable.header[8].text]}}</td>
+            <td>{{oneRow[datatable.header[9].text]}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

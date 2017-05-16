@@ -1,0 +1,14 @@
+<div class="menu">
+    <div *ngFor="let menuBlock of menuBlocks">
+        <div [ngClass]=[menuBlock.statusClass]>
+            <span (click)="toggleClassOC(menuBlock.id)" class="arnes_icon" [ngClass]=[menuBlock.pileDirection]></span>
+            <span>{{menuBlock.menuText}}</span>
+        </div>
+        <div *ngFor="let subMenu of menuBlock.subMenus" class="subMenu" [hidden]="!menuBlock.classState">
+            <div [ngClass]="(subMenu.selected) ? 'menuItemSelected': 'menuItem' " (click)="selectMenuItem(menuBlock.id,subMenu.menuText)">
+                <span style="padding-left:30px;" class="arnes_icon icon" [ngClass]=[subMenu.faIcon]></span>
+                <span style="padding-left:22px;">{{subMenu.menuText}}</span>
+            </div>
+        </div>
+    </div>
+</div>

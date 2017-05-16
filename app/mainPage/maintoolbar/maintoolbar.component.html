@@ -1,0 +1,14 @@
+<div class="row" style="margin-left:0px;padding-right:17px;background:#f4f4f4;">
+    <div class="col-md-3" style="padding:0px;" *ngFor="let jedanDio of bitniDijelovi">
+        <div class="toolbarBox">
+            <div class="item" [ngClass]="[jedanDio.totalItemType]">
+                <div class="arnes_icon icon" [ngClass]="[jedanDio.totalFaIcon]"></div>
+                <div class="details">
+                    <div class="value">{{jedanDio.totalAmount}}</div>
+                    <div class="text">{{jedanDio.totalText}}</div>
+                </div>
+                <div class="footer">View more <span class="arnes_icon fa-angle-double-right"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
